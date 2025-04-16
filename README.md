@@ -22,8 +22,8 @@ For example:
 
 Now you can use the program 'sha256' on your system:
 
-    $ ./sha256 <README.md
-    3e84f1167dbd910b7363e9f3575b849cf3637e97b4ce4b979f8248a7e5047cbd
+    $ echo -n "" | ./sha256
+    e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 ### Contributing
 
