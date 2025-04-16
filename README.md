@@ -2,7 +2,7 @@ This is a spellbook of computer programs.
 
 - Each program is written on 80 column x 25 row pages. (1 page, if possible!)
 - Programs operate Unix-style, on stdin and stdout. 
-- Programs also have a function interface.
+- Programs may also have a function interface.
 - Programs are currently all in the public domain
 - Programs are written in C with no library dependencies
 - Programs are "minified" (no whitespace, one letter variables) to reduce space
