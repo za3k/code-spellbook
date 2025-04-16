@@ -7,8 +7,7 @@ This is a spellbook of computer programs.
 - Programs are written in C with no library dependencies
 - Programs are "minified" (no whitespace, one letter variables) to reduce space
 - The goal is that someone could write a simple C compiler to run this code.
-  Therefore, the C used is simple (no macros, casting, postfix operators).
-  To help reader comprehension, programs prefer arrays over pointer arithmetic.
+  Therefore, the C used is simple.
 
 ### Using
 
@@ -34,3 +33,8 @@ without increasing page count, or if they reduce page count.
 
 Please mention what license you are releasing your new program under.
 Modifications should always be under the same license as the main program.
+
+Suggested style:
+- avoid standard library functions not absolutely required
+- easy to compile: no macros, casting, or postfix operators
+- easy to read: prefer arrays over pointer arithmetic
