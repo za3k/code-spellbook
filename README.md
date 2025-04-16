@@ -10,6 +10,21 @@ This is a spellbook of computer programs.
   Therefore, the C used is simple (no macros, casting, postfix operators).
   To help reader comprehension, programs prefer arrays over pointer arithmetic.
 
+### Using
+
+To compile a program on any POSIX system, type
+
+    cc <program_name.c> -o <program_name>
+
+For example:
+
+    cc sha256.c -o sha256
+
+Now you can use the program 'sha256' on your system:
+
+    $ ./sha256 <README.md
+    3e84f1167dbd910b7363e9f3575b849cf3637e97b4ce4b979f8248a7e5047cbd
+
 ### Contributing
 
 If you want to add a new program, feel free.

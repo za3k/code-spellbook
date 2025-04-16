@@ -18,8 +18,8 @@ v,a)^R(v,b)^R(v,c);}void U(C i){I a,B,c,d,e,F,g,h,u,v,j,m[64];f[b/32%16]|=i<<8*(
 ;for(j=0;j<16;++j){m[j]=f[j];f[j]=0;}for(;j<64;++j)m[j]=S(m[j-2],17,19,10)+m[j-7]
 +S(m[j-15],7,18,3)+m[j-16];for(j=0;j<64;++j){u=h+E(e,6,11,25)+(e&F^~e&g)+k[j]+m[j
 ];v=E(a,2,13,22)+(a&B^a&c^B&c);h=g;g=F;F=e;e=d+u;d=c;c=B;B=a;a=u+v;}s[0]+=a;s[1]
-+=B;s[2]+=c;s[3]+=d;s[4]+=e;s[5]+=F;s[6]+=g;s[7]+=h;}}
-void F(C *h){I i;l=b;U(0x80);while(b%512!=448)U(0);for(i=0;i<8;++i)U(l>>8*(7-i));
-for(i=0;i<64;++i)h[i]="0123456789abcdef"[(s[i/8]>>(7-i%8)*4)&0xf];}
-int main(){I c,i;C h[64];_();while((c=getchar())!=EOF)U(c);F(h);for(i=0;i<64;++i)
-putchar(h[i]);}void SHA(C *t,L n,C h[64]){L i;_();for(i=0;i<n;++i)U(t[i]);F(h);}
++=B;s[2]+=c;s[3]+=d;s[4]+=e;s[5]+=F;s[6]+=g;s[7]+=h;}}void F(C *h){I i;l=b;U(0x80
+);while(b%512!=448)U(0);for(i=0;i<8;++i)U(l>>8*(7-i));for(i=0;i<64;++i)h[i]="012"
+"3456789abcdef"[(s[i/8]>>(7-i%8)*4)&0xf];}int main(){I c,i;C h[65];h[64]=0x0a;_()
+;while((c=getchar())!=EOF)U(c);F(h);for(i=0;i<65;++i)putchar(h[i]);}void SHA(C *t
+,L n,C h[64]){L i;_();for(i=0;i<n;++i)U(t[i]);F(h);}
